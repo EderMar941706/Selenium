@@ -5,7 +5,7 @@ public class baseprueba {
     private WebDriver driver;
 
     public void setUp(){
-        System.setProperty("webdrive.chrome.drive", "resources/chromedrive.exe");
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
         System.out.println(driver.getTitle());
