@@ -17,14 +17,14 @@ public class baseprueba2 {
             List<WebElement> links =driver.findElements(By.tagName("a"));
             System.out.println(links.size());
 
-            WebElement inputsLink = driver.findElement(By.linkText("inputs"));
+            WebElement inputsLink = driver.findElement(By.linkText("Inputs"));
             inputsLink.click();
 
             driver.quit();
         }
 
         public static void main(String args[]){
-            baseprueba test = new baseprueba();
+            baseprueba2 test = new baseprueba2();
             test.setUp();
         }
     }
